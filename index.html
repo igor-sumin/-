@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Птички</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/icons8-червы-50.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Neon text library -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="js/jquery.novacancy.min.js"></script>
+
+</head>
+<body>
+    <!-- Начальная страница -->
+    <header>
+        <!-- Лого -->
+        <div class="wrapper">
+            <div class="logo">
+                <p class="logoText">
+                    ИГОРЬ S<span class="green">.</span>
+                </p>
+            </div>
+        </div>
+
+        <!-- Вступление -->
+        <div class="main">
+            <div class="main-header">
+                <h1 class="welcome", id="neonthis">
+                    ПТИЧКИ
+                </h1>
+                <div class="main-line"></div>
+                <p class="mainUnder">
+                    Добро пожаловать на<br>выставку "Попробуй различить"
+                </p>
+
+            </div>
+        </div>
+
+        <!-- Стрелка вниз -->
+        <div class="arrow-icon">
+            <div class="menuu">
+                <a href="#birds">
+                    <i class="fa fa-angle-down fa-2x"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Блоки с птичками -->
+    <section class="container", id="birds">
+        <div class="smooth-scroll-wrapper">
+            <div class="content">
+                <h1 id="special", class="polet">
+                    <!-- Пристегнитесь,<br>мы взлетаем <i class="fa fa-rocket fa-1.5x"></i> -->
+                    Полетели <i class="fa fa-plane"></i>
+                </h1>
+
+                <div class="contain">
+                    <h2 class="text">Попугай какаду</h2>
+                    <div class="img">
+                        <img src="img/birds/kakady.jpg" alt="" />
+                    </div>
+                </div>
+
+                <div class="contain">
+                    <h2 class="text">Ласточка</h2>
+                    <div class="img">
+                        <img src="img/birds/lastochka.jpg" alt="" />
+                    </div>
+                </div>
+
+                <div class="contain">
+                    <h2 class="text">Малиновая петроика</h2>
+                    <div class="img">
+                        <img src="img/birds/malin_petroyka.jpg" alt="" />
+                    </div>
+                </div>
+
+                <div class="contain">
+                    <h2 class="text">Снегирь</h2>
+                    <div class="img">
+                        <img src="img/birds/snegir.jpg" alt="" />
+                    </div>
+                </div>
+
+                <div class="contain">
+                    <h2 class="text">Совушка</h2>
+                    <div class="img">
+                        <img src="img/birds/sovushka.jpg" alt="" />
+                    </div>
+                </div>
+
+                <div class="contain">
+                    <h2 class="text">Страус</h2>
+                    <div class="img">
+                        <img src="img/birds/straus.jpg" alt="" />
+                    </div>
+                </div>
+
+                <div class="contain">
+                    <h2 class="text">Весенний снегирь</h2>
+                    <div class="img">
+                        <img src="img/birds/vesn_snegir.jpg" alt="" />
+                    </div>
+                </div>
+
+                <div class="contain">
+                    <h2 class="text">Волнистый попугайчик</h2>
+                    <div class="img">
+                        <img src="img/birds/volnist_parrot.jpg" alt="" />
+                    </div>
+                </div>
+
+                <div class="contain">
+                    <h2 class="text">Урод</h2>
+                    <div class="img">
+                        <img src="img/birds/yrod.jpg" alt="" />
+                    </div>
+                </div>
+
+                <div class="contain">
+                    <h2 class="text">Уточка</h2>
+                    <div class="img">
+                        <img src="img/birds/ytcka.jpg" alt="" />
+                    </div>
+                </div>
+
+                <h1 id="special">
+                    Лучшее
+                </h1>
+
+                <div class="contain">
+                    <h2 class="text">Тупик</h2>
+                    <div class="img">
+                        <img src="img/birds/typick.jpg" alt="" />
+                    </div>
+                </div>
+
+                <div class="contain petych">
+                    <h2 class="text">Петух</h2>
+                    <div class="img">
+                        <img src="img/birds/petychg.jpg" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Подвал -->
+        <div class="footer">
+            <div class="logo">
+                <p class="logoText">
+                    Время прощаться<span class="green">.</span>
+                </p>
+            </div>
+            <h4>
+                Спасибо за внимание!<br>
+                Отдельное спасибо Лере и команде разработчиков Paint
+            </h4>
+            <!-- Связь -->
+            <h4 class="thanks">
+                Ну ты пиши, если что:
+                <a href="https://github.com/igor-sumin" class="github"><i class="fa fa-github fa-1x"></i></a>
+                <a href="https://vk.com/id366333908" class="vk"><i class="fa fa-vk fa-1x"></i></a>
+            </h4>
+        </div>
+    </section>
+
+    <!-- Neon text script -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#neonthis').novacancy({
+                'reblinkProbability': 0.4,
+                'blinkMin': 0.1,
+                'blinkMax': 0.4,
+                'loopMin': 1,
+                'loopMax': 2,
+                'color': 'white',
+                'glow': ['0 0 80px white', '0 0 30px white', '0 0 6px white'],
+                'off': 2,
+                'blink': 0,
+                'autoOn': true
+            });
+        });
+    </script>
+
+    <!-- Плавное перемещение ссылок -->
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".menuu").on("click","a", function (event) {
+                event.preventDefault();
+                var id  = $(this).attr('href'),
+                    top = $(id).offset().top;
+                $('body,html').animate({scrollTop: top}, 1400);
+            });
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,267 @@
+/* Шрифты */
+
+@font-face {
+    font-family: PoiretOne-Regular;
+    src: url(../fonts/PoiretOne-Regular.ttf);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: RussoOne-Regular;
+    src: url(../fonts/RussoOne-Regular.ttf);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: RubikMonoOne-Regular;
+    src: url(../fonts/RubikMonoOne-Regular.ttf);
+    font-style: normal;
+}
+
+/* Скролл бар */
+
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	background-color: #161616;
+}
+
+::-webkit-scrollbar {
+	width: 7px;
+	background-color: #161616;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #366dac;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    color: white;
+    margin: 0;
+    padding: 0;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+header {
+    box-sizing: border-box;
+    min-height: 100vh;
+    position: relative;
+    transform-style: inherit;
+    width: 100vw;
+    text-align: center;
+    text-transform: uppercase;
+
+    font-family: 'PoiretOne-Regular', sans-serif;
+    /* Нужно дополнить для телефонов - ...ну его нахуй */
+    background: url(../backgroundHeaderParrots.jpg) no-repeat;
+    background-size: cover;
+}
+
+header, header:before {
+    background: 50% 50% / cover;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    background: url(../backgroundHeaderParrots.jpg) no-repeat;
+    background-size: cover;
+    transform-origin: center center 0;
+    transform: translateZ(-1px) scale(2);
+    z-index: -1;
+    min-height: 100vh;
+}
+
+.wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Лого */
+
+.logo {
+    font-family: 'RussoOne-Regular', sans-serif;
+    line-height: 50px;
+    text-align: center; 
+    margin: 5px 45px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: 3px;
+}
+
+.logo .green {
+    font-size: 32px;
+    color: #4A90E2;
+    padding-left: 1px;
+}
+
+/* Вступление */
+
+.main {
+    z-index: 20;
+}
+
+.main-header {
+    color: #fff;
+    text-align: center;
+    transform: translateY(135%);
+}
+
+h1 {
+    font-family: RubikMonoOne-Regular, sans-serif;
+    letter-spacing: 8px;
+    margin: 0;
+    font-size: 70px;
+    line-height: 1.5;
+}
+
+.main .main-line {
+    display: inline-block;
+    width: 200px;
+    height: 2px;
+    background: #fff;
+    left: 50%;
+}
+
+.main .main-header p {
+    font-size: 32px;
+    font-variant: small-caps;
+    letter-spacing: 1.125px;
+}
+
+/* Стрелка вниз */
+
+.arrow-icon a {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    left: 50%;
+    margin-bottom: 20px;
+    transition: linear .3s;
+}
+
+.arrow-icon a:hover {
+    transform: translateY(5px);
+}
+
+/* Блоки с птичками */
+
+.container {
+    z-index: 2;
+    position: absolute;
+    top: 100vh;
+    width: 100%;
+    background: #fff;
+    line-height: 20px;
+    font-weight: lighter;
+    color: grey;
+    background: #161616;    
+}
+
+.content {
+    width: 100%;
+}
+
+.contain {
+    margin: 40px 0;
+}
+
+h2 {
+    text-transform: uppercase;
+    color: #fff;
+    font-family: RubikMonoOne-Regular, sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 1.4px;
+    padding-top: 80px;    
+    margin-left: 13%;
+}
+
+img {
+    width: 78%;
+}
+
+.img {
+    text-align: center;
+    margin: 0 50px 100px 50px;
+}
+
+#special {
+    padding-top: 110px;
+    text-align: center;
+    color: white;
+    text-shadow: -10px 10px 1px #4A90E2,
+                 -20px 20px 2px #366dac,
+                 -30px 30px 3px #264d79;
+}
+
+.petych {
+    margin-bottom: 5%;    
+}
+
+/* Подвал */
+
+.footer {
+    background: #264d79;
+    color: #fff;
+    width: 100%;
+    height: 23vh;
+    font-family: PoiretOne-Regular, sans-serif;
+    font-size: 23px;
+}
+
+.footer .logo {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    background: #366dac;
+    text-align: left;
+    margin: 0;
+    padding-left: 13%;
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+
+.footer h4 {
+    line-height: 1.5;
+    margin: 0;
+    padding-left: 13%;
+}
+
+h4.thanks {
+    padding-top: 1%;
+}
+
+.footer a  {
+    padding-left: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: color .3s ease;
+}
+
+.footer a.github:hover {
+    color: #000;
+}
+
+.footer a.vk:hover {
+    color: #000;
+}
